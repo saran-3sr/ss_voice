@@ -220,10 +220,40 @@
 .thirdSection-flowchart-img {
   width: 80%;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.thirdSection-flowchart img {
-  width: 100%;
-  margin: auto;
+.thirdSection-flowchart-img-number {
+  background: black;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.thirdSection-flowchart-img-diagram1 {
+  -webkit-clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #19b885;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.thirdSection-flowchart-img-diagram2 {
+  -webkit-clip-path: polygon(91% 0, 100% 50%, 91% 99%, 0% 100%, 5% 50%, 0% 0%);
+          clip-path: polygon(91% 0, 100% 50%, 91% 99%, 0% 100%, 5% 50%, 0% 0%);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #19b885;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
 }
 .thirdSection-flowchart-body {
   width: 80%;
