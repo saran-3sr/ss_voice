@@ -376,13 +376,13 @@
   border: #d8d8d8 1px solid;
   padding: 1rem 1rem 1rem 1.5rem;
   width: 70%;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
 }
 .fifthSection-card-inputBox button {
   background-color: black;
   padding: 1rem 1.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   color: white;
   font-size: 14px;
   width: 30%;
@@ -395,6 +395,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 40%;
 }
 .fifthSection-card--tiles p {
   padding: 0.5rem;
