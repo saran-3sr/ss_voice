@@ -1,0 +1,115 @@
+.thirdSection {
+  background-color: $secondaryColor;
+
+  &-utiliseData {
+    &-head {
+      text-align: center;
+      font-family: Poppins;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3rem;
+      width: 50%;
+      margin: auto;
+    }
+    &-body {
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem;
+      width: 70%;
+      margin: auto;
+      padding: 1rem 0;
+    }
+  }
+
+  &-flowchart {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    padding: 3rem;
+    &-img {
+      width: 80%;
+      margin: auto;
+      @include flex-box($justifyContent: center);
+      &-number {
+        background: black;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        padding: 1rem;
+        color: white;
+        @include flex-box;
+        justify-content: center;
+        align-items: center;
+      }
+      &-diagram1 {
+        clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: $primaryColor;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+      }
+      &-diagram2 {
+        clip-path: polygon(91% 0, 100% 50%, 91% 100%, 0% 100%, 9% 52%, 0% 0%);
+
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: $primaryColor;
+        padding: 1rem 3rem;
+        margin-top: 1rem;
+      }
+    }
+
+    &-body {
+      width: 80%;
+      margin: auto;
+      padding: 2rem 0;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+  }
+
+  //   Advantages
+  &-advantages {
+    @include flex-box;
+    padding: 4rem 0;
+    &-left {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      flex: 1;
+
+      &-item {
+        @include flex-box(
+          $flexDirection: column,
+          $justifyContent: "flex-start"
+        );
+        align-items: center;
+        width: 33%;
+        text-align: center;
+        &-img {
+          border-radius: 50px;
+          width: 48px;
+          height: 48px;
+          background-color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    &-right {
+      @include flex-box($justifyContent: center);
+      flex: 1;
+    }
+  }
+}

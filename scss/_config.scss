@@ -1,0 +1,68 @@
+$backgroundColor: #ffffff;
+$primaryColor: #19b885;
+$secondaryColor: #f5fdff;
+$secondaryBackground: #33393f;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@mixin flex-box($justifyContent: space-between, $flexDirection: row) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+}
+@mixin card() {
+  background-color: $primaryColor;
+  color: white;
+  margin: auto;
+  transform: translateY(-50%);
+  padding: 3rem 1rem;
+  &-head {
+    text-align: center;
+    font-family: Poppins sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+  }
+}
+@mixin greenInput() {
+  width: 40%;
+  margin: auto;
+  padding: 1.5rem 0rem 0.5rem 0;
+  @include flex-box($justifyContent: center);
+  input {
+    border: #d8d8d8 1px solid;
+    padding: 1rem 1rem 1rem 1.5rem;
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+  }
+  button {
+    background-color: black;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-size: 14px;
+    width: 30%;
+    margin-left: 1px;
+  }
+}
+@mixin tiles() {
+  width: 40%;
+  margin: auto;
+  @include flex-box;
+  align-items: center;
+  p {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  .bold {
+    font-weight: 600;
+  }
+}

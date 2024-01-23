@@ -1,0 +1,114 @@
+.footerCard {
+  background-color: $secondaryBackground;
+  padding: 4rem 0;
+  width: 90%;
+  margin: auto;
+  color: white;
+  &-head {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem; /* 100% */
+  }
+  &-textAlgin {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  &-card-inputBox {
+    width: 30%;
+    margin: auto;
+    padding: 1.5rem 0rem 0.5rem 0;
+    @include flex-box($justifyContent: center);
+    input {
+      border: #d8d8d8 1px solid;
+      padding: 1rem 1rem 1rem 1.5rem;
+      width: 60%;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    button {
+      background-color: $primaryColor;
+      padding: 1rem 1.5rem;
+      border: none;
+      color: white;
+      font-size: 14px;
+      width: 40%;
+      //margin-left: 1px;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+}
+.footerDivElements {
+  padding: 8rem 6rem;
+  @include flex-box;
+  width: 80%;
+  margin: auto;
+  &-item {
+    flex: 1;
+    &-header {
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-content {
+      padding-top: 2rem;
+      color: rgba(13, 27, 30, 0.5);
+
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 28px; /* 200% */
+      text-decoration: none;
+      list-style: none;
+    }
+
+    &-contact {
+      flex: 2;
+      &-content {
+        padding-top: 2rem;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px; /* 200% */
+        &-item1 {
+          @include flex-box($justifyContent: flex-start);
+          align-items: center;
+          i {
+            color: $primaryColor;
+          }
+          p {
+            padding: 0 0 0 0.5rem;
+          }
+        }
+      }
+      &-socialMedia {
+        @include flex-box($justifyContent: space-between);
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        width: 80%;
+        &-items {
+          color: white;
+          background-color: $primaryColor;
+          height: 36px;
+          width: 36px;
+          padding: 1rem;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  &-img {
+    padding-top: 4rem;
+  }
+}

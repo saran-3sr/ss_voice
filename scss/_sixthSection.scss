@@ -1,0 +1,70 @@
+.sixthSection {
+  background: $secondaryBackground;
+  color: white;
+
+  &-paraDiv {
+    padding-top: 6rem;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+    &-head {
+      text-align: center;
+      font-family: Inter;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3rem;
+      padding-bottom: 2rem;
+      width: 60%;
+      margin: auto;
+    }
+    &-body {
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+  }
+  &-flexBox {
+    @include flex-box;
+    flex-wrap: wrap;
+    // padding-top: 12rem;
+    &-item {
+      width: 45%;
+      @include flex-box;
+      align-items: flex-start;
+      padding-top: 4rem;
+      &-left {
+        background: $primaryColor;
+        height: 48px;
+        width: 48px;
+        padding: 1rem;
+        border-radius: 50%;
+        @include flex-box($justifyContent: center);
+        align-items: center;
+      }
+      &-right {
+        padding-left: 1.5rem;
+        &-head {
+          font-family: Inter;
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 3rem;
+        }
+        &-body {
+          font-family: Inter;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2rem;
+          width: 90%;
+        }
+      }
+    }
+  }
+  padding-bottom: 16rem;
+}

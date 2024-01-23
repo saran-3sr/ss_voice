@@ -1,0 +1,81 @@
+.fifthSection {
+  width: 100%;
+  margin: auto;
+  background: $secondaryColor;
+  padding-bottom: 4rem;
+  // @include flex-box($flexDirection: column, $justifyContent: center);
+  // align-items: center;
+  &-card {
+    @include card;
+    &-head {
+      font-family: Inter;
+      font-size: 28px;
+    }
+    &-inputBox {
+      @include greenInput;
+    }
+    &--tiles {
+      @include tiles;
+      width: 40%;
+    }
+  }
+  &-utiliseData {
+    &-head {
+      text-align: center;
+      font-family: Poppins;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3rem;
+      width: 70%;
+      margin: auto;
+    }
+    &-body {
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2rem;
+      width: 70%;
+      margin: auto;
+      padding: 1rem 0;
+    }
+  }
+
+  #fifthSection-card--tiles-first {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+  &-bannerFlexs {
+    padding: 6rem 0 6rem 0;
+  }
+  &-bannerFlex {
+    padding: 2rem 0 0 0;
+    @include flex-box;
+    align-items: center;
+
+    &-left {
+      &-header {
+        font-family: Inter;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.5 rem;
+      }
+      &-text {
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.right {
+  padding-right: 5rem;
+}

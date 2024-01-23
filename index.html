@@ -16,11 +16,11 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
   </head>
 
   <!-- 7th section is for reviews -->
@@ -742,35 +742,52 @@
         </div>
 
         <!-- here comes the carosal -->
-        <div class="carosal">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="./img/image/carosole.png " alt="" />
-                <p>Alex Healy</p>
 
-                <p>Digital Producer at Heat + Deloitte Digital</p>
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/image/carosole2.png " alt="" />
-                <p>Alex Healy</p>
-
-                <p>Digital Producer at Heat + Deloitte Digital</p>
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/image/carosole3.png " alt="" />
-                <p>Alex Healy</p>
-
-                <p>Digital Producer at Heat + Deloitte Digital</p>
-              </div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper--slide">
+              <img
+                src="./img/image/carosole2.png "
+                class="swiper--slide-opacity-img"
+                alt=""
+              />
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper--slide">
+              <img
+                src="./img/image/carosole2.png "
+                class="swiper--slide-opacity-img"
+                alt=""
+              />
+            </div>
+            <div class="swiper--slide">
+              <img src="./img/image/carosole.png " alt="" />
+              <p class="swiper--slide-head">Alex Healy</p>
+
+              <p class="swiper--slide-gray">
+                Digital Producer at Heat + Deloitte Digital
+              </p>
+            </div>
+            <div class="swiper--slide">
+              <img
+                src="./img/image/carosole2.png "
+                class="swiper--slide-opacity-img"
+                alt=""
+              />
+            </div>
+            <div class="swiper--slide">
+              <img
+                src="./img/image/carosole3.png "
+                class="swiper--slide-opacity-img"
+                alt=""
+              />
+            </div>
           </div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
         </div>
       </div>
     </section>

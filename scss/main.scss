@@ -1,0 +1,31 @@
+@import "config";
+@import "nav";
+@import "home";
+@import "secondSection";
+@import "thirdSection";
+@import "fourthSection";
+@import "fifthSection";
+@import "sixthSection";
+@import "seventhSection";
+@import "footerCard";
+@import "swiper";
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  overflow-x: hidden;
+  // padding: 0rem 3rem;
+}
+header {
+  @include flex-box;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: $backgroundColor;
+  z-index: 99;
+  padding: 2rem 6rem 1rem 6rem;
+  font-size: 14px;
+}
+section {
+  padding: 0rem 6rem;
+}

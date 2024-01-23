@@ -1,0 +1,15 @@
+.swiper-container {
+  margin: auto;
+  width: 750px;
+}
+.swiper-slide {
+  margin: auto;
+  @include flex-box($flexDirection: column);
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+}

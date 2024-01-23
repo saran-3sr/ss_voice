@@ -540,7 +540,7 @@
   width: 90%;
 }
 
-.seventhSection-head {
+.seventhSection-head, .seventhSection-body {
   text-align: center;
   font-family: Poppins;
   font-size: 2rem;
@@ -552,7 +552,6 @@
   margin: auto;
 }
 .seventhSection-body {
-  text-align: center;
   font-family: Inter;
   font-size: 1rem;
   font-style: normal;
@@ -565,9 +564,6 @@
 .seventhSection-body-1 {
   line-height: 2.5rem;
   text-align: center;
-  font-family: Inter;
-  font-size: 1rem;
-  font-style: normal;
   font-weight: 300;
   padding: 0 0 2rem 0;
   width: 60%;
@@ -603,6 +599,48 @@
 }
 .seventhSection-Customer {
   padding: 4rem 0;
+}
+
+.swiper-container {
+  width: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.swiper--slide {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.swiper--slide img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.swiper--slide-opacity-img {
+  opacity: 0.25;
+}
+.swiper--slide-head {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.swiper--slide-gray {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px; /* 133.333% */
 }
 
 .footerCard {
@@ -749,6 +787,7 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 30px;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 header {

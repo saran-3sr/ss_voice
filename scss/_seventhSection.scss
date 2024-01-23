@@ -1,0 +1,105 @@
+.seventhSection {
+  &-head,
+  &-body {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    padding: 2rem 0 1rem 0;
+    width: 60%;
+    margin: auto;
+  }
+  &-body {
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 0 0 2rem 0;
+    width: 60%;
+    margin: auto;
+
+    &-1 {
+      line-height: 2.5rem;
+      text-align: center;
+      font-weight: 300;
+      padding: 0 0 2rem 0;
+      width: 60%;
+      margin: auto;
+    }
+  }
+  &-TopReview {
+    &-Img {
+      padding-bottom: 8rem;
+      width: 50%;
+      @include flex-box($justifyContent: space-between);
+      align-items: center;
+      margin: auto;
+
+      &-1 {
+        height: 16vh;
+      }
+      &-2 {
+        height: 8vh;
+      }
+    }
+  }
+  &-TopCompetitors {
+    &-img {
+      @include flex-box;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: auto;
+      padding-top: 4rem;
+      img {
+        width: 15%;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  &-Customer {
+    padding: 4rem 0;
+  }
+}
+.swiper {
+  &-container {
+    width: 100%;
+  }
+  &-wrapper {
+    @include flex-box;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  &--slide {
+    width: 100%;
+
+    @include flex-box;
+    flex-direction: column;
+    align-items: center;
+    img {
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+    }
+    &-opacity-img {
+      opacity: 0.25;
+    }
+    &-head {
+      font-size: 26px;
+      font-weight: 500;
+      padding: 0.5rem 0;
+    }
+    &-gray {
+      color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px; /* 133.333% */
+    }
+  }
+}

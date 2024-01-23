@@ -1,0 +1,58 @@
+.secondSection {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 12rem;
+
+  &-head {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+  &-text {
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 1rem 0 0 0;
+  }
+  &-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem; /* 177.778% */
+    text-decoration-line: underline;
+  }
+}
+.secondSectionBox {
+  background: $secondaryBackground;
+  color: white;
+  @include flex-box;
+  padding: 3rem 4rem 2rem 4rem;
+  transform: translate(0, -50%);
+  &-item {
+    text-align: center;
+    width: 20%;
+    &-head {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    &-body {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%;
+      padding: 24px 0 19px 0;
+    }
+  }
+}
